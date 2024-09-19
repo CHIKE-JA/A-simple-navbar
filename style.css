@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+ body {
+    font-family: "Syne";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 1.5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    padding: 1.5rem;
+    gap: 16px;
+}
+
+#bar {
+    font-size: 1.5rem;
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.container div {
+    padding: 1rem;
+    background-color: dodgerblue;
+    color: white;
+}
+
+@media(max-width: 768px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+  #bar {
+    display: block;
+  }
+
+
+.nav-list ul {
+    display: none;
+}
+
+}
+
+@media(max-width: 400px){
+    h2 {
+        font-size: 1rem;
+    }
+}
